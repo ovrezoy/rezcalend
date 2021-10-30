@@ -1798,13 +1798,21 @@
     javascript-natural-sort "0.7.1"
     lodash "4.17.21"
 
-"@trpc/client@9.10.1", "@trpc/client@^9.10.1":
+"@trpc/client@9.10.1":
   version "9.10.1"
   resolved "https://registry.npmjs.org/@trpc/client/-/client-9.10.1.tgz#cebf3ff2966a02e9a0220eb1e439e17fbd402580"
   integrity sha512-SABrnpyLjidZVA65wFnOCFPPdE4ZoGPZXK22X1lXRm6po6H6TgDMNTtvRtQfYeEeVXQeEs7x127PBGyiZbWQPA==
   dependencies:
     "@babel/runtime" "^7.9.0"
     "@trpc/server" "9.10.1"
+
+"@trpc/client@^9.11.0":
+  version "9.11.0"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-9.11.0.tgz#0d033ac69394f68eb9fd9332093288cee8ab7dc5"
+  integrity sha512-ysCkAvkX6S5vAoeeu8zaPBuJHdUYocP/qjp93I3tRSzF/wcQGZbot7qeSJuvBiotzB+k4c0gnO34j+crfWxPig==
+  dependencies:
+    "@babel/runtime" "^7.9.0"
+    "@trpc/server" "9.11.0"
 
 "@trpc/next@^9.10.1":
   version "9.10.1"
@@ -1826,10 +1834,17 @@
     "@trpc/client" "9.10.1"
     "@trpc/server" "9.10.1"
 
-"@trpc/server@9.10.1", "@trpc/server@^9.10.1":
+"@trpc/server@9.10.1":
   version "9.10.1"
   resolved "https://registry.npmjs.org/@trpc/server/-/server-9.10.1.tgz#17ff6eae0a4596382dd9d6c1f2768390abe47936"
   integrity sha512-nYKlAF2kwhazPZBHnCSwX/qciZBIt36VuiBVULvxsiZe1cYR9qEgVLkaDB/jYNFvi6oMkWQj2UZnHSxmhESjjg==
+  dependencies:
+    tslib "^2.1.0"
+
+"@trpc/server@9.11.0", "@trpc/server@^9.10.1":
+  version "9.11.0"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-9.11.0.tgz#dee35825ecb529c900d463aecf4ca188d0963bb6"
+  integrity sha512-zxl+QMSZvLyev9XxQXVbm49PZYAyrIPy80cGqrvDlbb5/s82lpC9/C+brjNj2c3Aeq69Nk07A4sATbXolcgBjg==
   dependencies:
     tslib "^2.1.0"
 
@@ -2605,11 +2620,6 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
 bn.js@^5.0.0, bn.js@^5.1.1:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.0.tgz#358860674396c6997771a9d051fcc1b57d4ae002"
-
-bowser@^2.8.1:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
-  integrity sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==
 
 bowser@^2.8.1:
   version "2.11.0"
@@ -3818,11 +3828,6 @@ fast-equals@^1.6.3:
   resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-1.6.3.tgz#84839a1ce20627c463e1892f2ae316380c81b459"
   integrity sha512-4WKW0AL5+WEqO0zWavAfYGY1qwLsBgE//DN4TTcVEN2UlINgkv9b3vm2iHicoenWKSX9mKWmGOsU/iI5IST7pQ==
 
-fast-equals@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-1.6.3.tgz#84839a1ce20627c463e1892f2ae316380c81b459"
-  integrity sha512-4WKW0AL5+WEqO0zWavAfYGY1qwLsBgE//DN4TTcVEN2UlINgkv9b3vm2iHicoenWKSX9mKWmGOsU/iI5IST7pQ==
-
 fast-glob@^3.1.1, fast-glob@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.7.tgz#fd6cb7a2d7e9aa7a7846111e85a196d6b2f766a1"
@@ -4335,18 +4340,6 @@ hex-color-regex@^1.1.0:
 highlight.js@^10.7.1:
   version "10.7.3"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
-
-history@^4.9.0:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
-  integrity sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
-  dependencies:
-    "@babel/runtime" "^7.1.2"
-    loose-envify "^1.2.0"
-    resolve-pathname "^3.0.0"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
-    value-equal "^1.0.1"
 
 history@^4.9.0:
   version "4.10.1"
@@ -6556,13 +6549,6 @@ path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
-path-to-regexp@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
-  integrity sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
-  dependencies:
-    isarray "0.0.1"
-
 path-type@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
@@ -7326,11 +7312,6 @@ resolve-from@^4.0.0:
 resolve-from@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
-
-resolve-pathname@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz#99d02224d3cf263689becbb393bc560313025dcd"
-  integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
 resolve-pathname@^3.0.0:
   version "3.0.0"
